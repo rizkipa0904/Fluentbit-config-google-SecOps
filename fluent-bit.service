@@ -6,7 +6,7 @@ After=network.target
 
 [Service]
 Type=simple
-Environment="FLB_LOG_LEVEL=debug"
+Environment="FLB_LOG_LEVEL=warn"
 ExecStart=/opt/fluent-bit/bin/fluent-bit -c /etc/fluent-bit/fluent-bit.conf
 Restart=always
 User=root
